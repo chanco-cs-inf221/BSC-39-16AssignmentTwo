@@ -1,0 +1,298 @@
+@media screen and (min-width:300px) {
+    body{
+        background: rgb(219, 219, 231);
+    }
+header{
+    background: rgb(140, 140, 241);
+    padding: 5%;
+    overflow: hidden;
+}
+.home{
+
+    font-size: 22px;
+color: white;
+position: absolute;
+    left: 5%;
+    top: 50px;
+    overflow: hidden;
+}
+.contact a{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    left: 85%;
+    top: 50px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.about a{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 50px;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+img{
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    left: 2%;
+    height: 20%;
+  }
+  section{
+      
+    position: relative;
+    left: 3%;
+    right: 30%;
+    
+    width: 75%;
+    
+}
+section ul{
+    position: absolute;
+    left: 55%;
+    top: 50px;
+    font-size: 20px;
+}
+section h3{
+  position: relative;
+  left: 10%;
+  top: 8px;
+}
+section hr{
+  width: 60%;
+  
+}
+fieldset{
+    width: 40%;
+    margin-left:25%;
+    align-content: center;
+}
+fieldset legend{
+    font-size:23px;
+    color: green;
+}
+ input{
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid blue;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+button{
+    display: block;
+	margin: auto;
+	width: 80%;
+	font-size: 16px;
+	color: white;
+	background: #5F9EA0;
+	border: none;
+	
+}
+#error{
+    color: red;
+    background: rgb(219, 148, 148);
+    text-align: center;
+    
+}
+
+p{
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    border: 2px solid #73AD21;
+    display: block;
+    margin: auto;
+    padding-top:15px;
+}
+footer{
+    background: rgb(106, 106, 219);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#div2 h1{
+    color: white;
+}
+.wrapper{
+    padding-bottom: 20px;
+}
+.space{
+    padding-bottom: 80px;
+}
+footer .footer input {
+    color: white;
+}
+footer  input {
+    border-bottom: 1px solid white;
+}
+#div2{
+    
+    font-size: 20px;
+    color: rgb(245, 225, 225);
+}
+ #div2 p{
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    height: 80px;
+    margin: 100px;
+    border: 2px solid #73AD21;
+    display: block;
+    margin: auto;
+    padding-top:15px;
+ }
+ 
+}
+@media screen and (width:425px) {
+
+    header{
+        background: rgb(140, 140, 241);
+        padding: 10%;
+        overflow: hidden;
+    }
+    .home{
+    
+        font-size: 15px;
+    color: white;
+    position: absolute;
+        left: 5%;
+        top: 35px;
+        overflow: hidden;
+    }
+    .contact a{
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left: 80%;
+        top: 35px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .about a{
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left: 45%;
+        top: 35px;
+        overflow: hidden;
+        text-decoration: none;
+    
+    }
+}
+/*mobile device*/
+@media screen and (width:320px) {
+
+    header{
+        background: rgb(140, 140, 241);
+        padding: 10%;
+        width: 90%;
+    }
+    .home{
+    
+        font-size: 15px;
+    color: white;
+    position: absolute;
+        left: 5%;
+        top: 35px;
+        overflow: hidden;
+    }
+    .contact a{
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left: 80%;
+        top: 35px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .about a{
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left: 45%;
+        top: 35px;
+        overflow: hidden;
+        text-decoration: none;
+    
+    }
+}
+/*mobile m*/
+@media screen and (width:375px) {
+
+    header{
+        background: rgb(140, 140, 241);
+        padding: 10%;
+        width: 80%;
+    }
+    .home{
+    
+        font-size: 15px;
+    color: white;
+    position: absolute;
+        left: 5%;
+        top: 35px;
+        overflow: hidden;
+    }
+    .contact a{
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left: 80%;
+        top: 35px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .about a{
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left: 45%;
+        top: 35px;
+        overflow: hidden;
+        text-decoration: none;
+    
+    }
+}
+@media screen and (width:768px) {
+
+    header{
+        background: rgb(140, 140, 241);
+        padding: 5%;
+        width: 90%;
+    }
+.home{
+
+    font-size: 22px;
+color: white;
+position: absolute;
+    left: 5%;
+    top: 30px;
+    overflow: hidden;
+}
+.contact a{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    left: 85%;
+    top: 30px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.about a{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 30px;
+    overflow: hidden;
+    text-decoration: none;
+}
+}

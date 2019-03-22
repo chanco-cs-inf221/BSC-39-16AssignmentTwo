@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Second Assignment</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <div class="home" id="home">Home</div>
+        <div class="about" id="about"><a href="about.html">About</a></div>
+        <div class="contact" id="contact"><a href="contacts.html">Contacts</a></div>
+        
+    </header>
+
+<!--Top section-->
+<section>
+        <h4 align="center">Chris Pharaoh student of Chancellor college</h4>
+        <hr>
+        <div class="img"><img src="pic1.jpeg" ault="profile" width="150" height="125"/></div> 
+        <ul>
+            
+            <ol>Name: Chris Pharaoh</ol>
+            <ol>Programme: Bachelor of science</ol>
+            <ol>Social:Facebook</ol>
+            <ol>Social:Github</ol>
+        </ul> 
+        <hr> 
+    </section>
+    
+    <!--Adding js-->
+    <script>
+        var hello = () =>{
+            // validating
+            if(document.getElementById("project").value == ""){
+             alert("please fill in Project name"); return false;
+                    
+                    }
+            if(document.getElementById("description").value == ""){
+                    alert("Please add description"); return false;
+                    } 
+            if(document.getElementById("date1").value == "" || document.getElementById("date1").value == "null"){
+                    alert("Please provide a valid date"); return false;
+                    }           
+    if(typeof(Storage) !== "undefined"){
+        //storing form project name in local storage
+        var project = document.getElementById("project").value;
+    
+        var keep = localStorage.project = project;
+        
+        //storing project description in local storage
+        var description = document.getElementById("description").value;
+        var des = localStorage.description = description;
+
+        //storing date in local storage
+        var dete = document.getElementById("date1").value;
+        localStorage.dete = dete;
+      
+        var para = document.createElement("p");
+        //retrieving the stored data to be displayed
+        var retrieve = localStorage. project;
+        var node = document.createTextNode(localStorage. project);
+        
+        para.appendChild(node);
+        // adding an event listener 
+        para.addEventListener('click',function(){
+            document.write('PROJECT NAME: '+localStorage.project); // displaying project name
+            document.write('  ');
+            document.write('DESCRIPTION: '   +localStorage.description);// displaying Description
+            document.write('COMPLETION DATE: '   +localStorage.dete); // displaying date 
+        });
+
+        para.addEventListener('mouseover',function(){
+            para.style.border="2px solid blue";
+           
+        })
+        var element = document.getElementById("div1");
+        
+            element.appendChild(para);
+
+   }
+
+   // clearing the field after the data has been stored to local storage to enter the next input for document name
+   if(document.getElementById("project").value !== "")
+            document.getElementById("project").value="";
+           
+    // clearing the field after the data has been stored to local storage to enter the next input for description
+   if(document.getElementById("description").value !== "")
+    var input = document.getElementById("description");
+            document.getElementById("description").value="";
+
+   // clearing the field after the data has been stored to local storage to enter the next input for completion date
+   if(document.getElementById("date1").value !== "")
+    var input = document.getElementById("date1");
+            document.getElementById("date1").value="";             
+  }
+    </script>
+
+    <div id="div1">
+        <h2 align="center">Your work Projects will eppear here</h2>
+        
+        </div>
+
+    <fieldset>
+        <legend>Please add your projects</legend>
+        
+            <div class="wrapper">
+        <!---Creating a form for user imput-->
+        
+                <input type="text" id="project" placeholder="Project Name*" name="project"><br><br>
+                <input type="text" id="description" name="description" placeholder="Project Description*"><br><br>
+                
+                <input type="date" name="date1" id="date1" placeholder="Completion Date*  dd/mm/yy"><br><br>
+                <button id="button" onclick="return hello()">+add</button>
+            </div>
+            
+    </fieldset>
+
+        <div class="space"></div>
+        <!--footer for work experience-->
+        <!---Creating a form for user imput-->
+
+        <script>
+            var footer = () =>{
+                if(document.getElementById("name").value == ""){
+             alert("please add the name of the company you have been working "); return false;
+                    
+                    }
+            if(document.getElementById("experience").value == ""){
+                    alert("Please add your work experience"); return false;
+                    } 
+
+             if(document.getElementById("date2").value == "" || document.getElementById("date2").value == "null"){
+                    alert("Please provide a valid date"); return false;
+                    }  
+        if(typeof(Storage) !== "undefined") {
+            //storing form project name in local storage
+            var name1 = document.getElementById("name").value;
+        
+            var keep = localStorage.name = name1;
+            
+            //storing project description in local storage
+            var experience = document.getElementById("experience").value;
+            var des = localStorage.experience = experience;
+    
+            //storing date in local storage
+            var dete = document.getElementById("date2").value;
+            var ad = localStorage.dete = dete;
+          
+            var para = document.createElement("p");
+            //retrieving the stored data to be displayed
+            var retrieve = localStorage.experience;
+            var node = document.createTextNode(localStorage.experience);
+            
+            para.appendChild(node);
+            para.addEventListener('click',function(){
+                document.write('NAME OF ORGANISATION: '+localStorage.name);
+                document.write('  ');
+                document.write('EXPERIENCE: '   +localStorage.experience);
+                document.write('COMPLETION DATE: '   +localStorage.dete);
+            });
+    
+            para.addEventListener('load',function(){
+                para.style.border="2px solid red";
+            })
+            var element = document.getElementById("div2");
+            
+            element.appendChild(para);
+            
+       }
+        
+    // clearing the field after the data has been stored to local storage to enter the next input for document name
+    if(document.getElementById("name").value !== ""){
+                document.getElementById("name").value="";
+    }
+        // clearing the field after the data has been stored to local storage to enter the next input for experience
+    if(document.getElementById("experience").value !== ""){
+                document.getElementById("experience").value="";
+    }
+     // clearing the field after the data has been stored to local storage to enter the next input for  completion date of experience
+   if(document.getElementById("date2").value !== ""){
+            document.getElementById("date2").value="";
+   } 
+      }
+    </script>
+     
+    <footer>
+            <div id="div2">
+                    <h2 align="center">Your work experience will eppear here</h2>  
+            </div>
+            <div class="footer">
+                <h1 align="center">Using the form below enter name and work experince</h1>
+                <input type="text" id="name" placeholder="Enter Orgarnisation name you have been working*" name="project"><br>
+                <input type="text" id="experience" name="description" placeholder="Your experience*"><br>
+                
+                <input type="date" name="date1" id="date2"><br>
+                <button id="button" onclick="return footer()">+add</button>
+                
+            </div>
+    </footer>
+    
+</body>
+</html>
